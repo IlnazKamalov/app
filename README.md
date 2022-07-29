@@ -6,3 +6,6 @@ https://asciinema.org/a/vKXbYVNXaMMpqWajchGBhkigi
 
 2.Calc
 https://asciinema.org/a/C2olXvinJNFdZrjM1VEMSKrBe
+
+3.GCD
+https://asciinema.org/a/02bgtzpxC08FaOL5kB2ZzxfCJ

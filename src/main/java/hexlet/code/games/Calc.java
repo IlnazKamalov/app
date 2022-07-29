@@ -6,7 +6,9 @@ import hexlet.code.Utils;
 public class Calc {
     private static final String[] OPERATOR = new String[] {"+", "-", "*"};
     public static void runGame() {
+
         String[][] questionAndAnswer = new String[Engine.ROUNDS_COUNT][Engine.ROUNDS_COUNT];
+
         for (int i = 0; i < Engine.ROUNDS_COUNT; i++) {
             int numberFirst = Utils.getMaxRandom(Utils.MAX_RANDOM);
             int numberSecond = Utils.getMaxRandom(Utils.MAX_RANDOM);
