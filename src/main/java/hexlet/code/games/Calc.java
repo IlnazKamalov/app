@@ -23,7 +23,7 @@ public class Calc {
             case "+" -> Integer.toString(numberFirst + numberSecond);
             case "-" -> Integer.toString(numberFirst - numberSecond);
             case "*" -> Integer.toString(numberFirst * numberSecond);
-            default -> "Unknown operator";
+            default -> "Unknown operator!";
         };
     }
 }
