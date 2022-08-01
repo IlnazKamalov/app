@@ -19,10 +19,7 @@ public class Prime {
         Engine.runGame(RULES, questionAndAnswer);
     }
     private static boolean isPrime(int primeNumber) {
-        if (primeNumber % 2 == 0) {
-            return false;
-        }
-        for (int i = Engine.ROUNDS_COUNT; i * i <= primeNumber; i += 2) {
+        for (int i = 2; i < primeNumber; i++) {
             if (primeNumber % i == 0) {
                 return false;
             }
