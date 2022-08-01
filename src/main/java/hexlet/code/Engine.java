@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class Engine {
     public static final int ROUNDS_COUNT = 3;
-    public static final int PROGRESSION_LENGTH = 10;
 
     public static void runGame(String gameRules, String[][] questionAndAnswer) {
 
