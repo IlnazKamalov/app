@@ -25,7 +25,7 @@ public class App {
         String choiceNumber = String.valueOf(scanner.next());
 
         switch (choiceNumber) {
-            case "1" -> Cli.getName();
+            case "1" -> Cli.greeting();
             case "2" -> EvenNumber.runGame();
             case "3" -> Calc.runGame();
             case "4" -> GCD.runGame();
