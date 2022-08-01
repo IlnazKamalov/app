@@ -4,8 +4,11 @@ import hexlet.code.Engine;
 import hexlet.code.Utils;
 
 
+
 public class Progression {
     public static final int PROGRESSION_LENGTH = 10;
+
+    private static final String RULES = "What number is missing in the progression?";
     public static void runGame() {
 
         String[][] questionAndAnswer = new String[Engine.ROUNDS_COUNT][Engine.ROUNDS_COUNT];
@@ -25,6 +28,6 @@ public class Progression {
             }
             questionAndAnswer[i][0] = stringBuilder.toString();
         }
-        Engine.runGame("What number is missing in the progression?", questionAndAnswer);
+        Engine.runGame(RULES, questionAndAnswer);
     }
 }

@@ -5,6 +5,8 @@ import hexlet.code.Utils;
 
 public class GCD {
 
+    private static final String RULES = "Find the greatest common divisor of given numbers.";
+
     public static void runGame() {
 
         String[][] questionAndAnswer = new String[Engine.ROUNDS_COUNT][Engine.ROUNDS_COUNT];
@@ -15,7 +17,7 @@ public class GCD {
             questionAndAnswer[i][0] = String.format("%s %s", numberFirst, numberSecond);
             questionAndAnswer[i][1] = String.valueOf(gcdByEuclidAlgorithm(numberFirst, numberSecond));
         }
-        Engine.runGame("Find the greatest common divisor of given numbers.", questionAndAnswer);
+        Engine.runGame(RULES, questionAndAnswer);
     }
     private static int gcdByEuclidAlgorithm(int numberFirst, int numberSecond) {
 

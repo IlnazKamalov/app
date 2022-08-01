@@ -5,6 +5,8 @@ import hexlet.code.Utils;
 
 public class Prime {
 
+    private static final String RULES = "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
+
     public static void runGame() {
 
         String[][] questionAndAnswer = new String[Engine.ROUNDS_COUNT][Engine.ROUNDS_COUNT];
@@ -14,7 +16,7 @@ public class Prime {
             questionAndAnswer[i][0] = Integer.toString(primeNumber);
             questionAndAnswer[i][1] = isPrime(primeNumber) ? "yes" : "no";
         }
-        Engine.runGame("Answer 'yes' if given number is prime. Otherwise answer 'no'.", questionAndAnswer);
+        Engine.runGame(RULES, questionAndAnswer);
     }
     private static boolean isPrime(int primeNumber) {
         if (primeNumber % 2 == 0) {
