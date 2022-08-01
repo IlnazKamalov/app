@@ -4,8 +4,8 @@ import java.util.Random;
 
 public class Utils {
     public static final int MAX_RANDOM = 100;
+    public static final Random RANDOM = new Random();
     public static int getMaxRandom(int maxRandom) {
-        Random random = new Random();
-        return random.nextInt(maxRandom);
+        return RANDOM.nextInt(maxRandom);
     }
 }
