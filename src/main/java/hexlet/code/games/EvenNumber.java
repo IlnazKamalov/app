@@ -20,6 +20,9 @@ public class EvenNumber {
         Engine.runGame(RULES, questionAndAnswer);
     }
     private static String evenNumber(int number) {
+        if (number == 1) {
+            return "no";
+        }
         if (number % 2 == 0) {
             return "yes";
         }
