@@ -22,14 +22,25 @@ public class Calc {
         Engine.runGame(RULES, questionAndAnswer);
     }
 
-    private static int calculate(String operator, int numberFirst, int numberSecond) {
-        if ("+".equals(operator)) {
-            return numberFirst + numberSecond;
-        } else if ("-".equals(operator)) {
-            return numberFirst - numberSecond;
-        } else if ("*".equals(operator)) {
-            return numberFirst * numberSecond;
+    private static String calculate(String operator, int numberFirst, int numberSecond) {
+
+        String result = "";
+
+        switch (operator) {
+            case "+" -> {
+                result = Integer.toString(numberFirst + numberSecond);
+                return result;
+            }
+            case "-" -> {
+                result = Integer.toString(numberFirst - numberSecond);
+                return result;
+            }
+            case "*" -> {
+                result = Integer.toString(numberFirst * numberSecond);
+                return result;
+            }
+            default -> System.out.println(" ");
         }
-        return numberFirst;
+        return result;
     }
 }
