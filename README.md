@@ -2,6 +2,14 @@
 [![Actions Status](https://github.com/IlnazKamalov/java-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/IlnazKamalov/java-project-lvl1/actions)
 <a href="https://codeclimate.com/github/IlnazKamalov/app/maintainability"><img src="https://api.codeclimate.com/v1/badges/a0a8ae5cdfbb9acbcd8b/maintainability" /></a>
 
+Hi. This game is my first project! 
+
+Welcome! 
+
+This game has 5 full-fledged games with 3 questions in each. Below are links to the gameplay of the game.
+
+
+
 1.Even
 https://asciinema.org/a/vKXbYVNXaMMpqWajchGBhkigi
 

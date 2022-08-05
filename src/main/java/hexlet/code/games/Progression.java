@@ -24,14 +24,14 @@ public class Progression {
             int begin = Utils.getMaxRandom(BEGIN);
             int sequence = Utils.getMinMaxRandom(PROGRESSION_MIN, PROGRESSION_MAX);
             int step = Utils.getMinMaxRandom(1, STEP);
-            int[] numbers = getProgression(begin, sequence, step);
+            int[] numbers = generateProgression(begin, sequence, step);
             int numPosition = Utils.getMinMaxRandom(0, numbers.length);
             questionAndAnswer[i][0] = question(numbers, numPosition);
             questionAndAnswer[i][1] = String.valueOf(numbers[numPosition]);
         }
         Engine.runGame(RULES, questionAndAnswer);
     }
-    private static int[] getProgression(int begin, int sequence, int step) {
+    private static int[] generateProgression(int begin, int sequence, int step) {
         int[] numbers = new int[sequence];
         numbers[0] = begin;
 
