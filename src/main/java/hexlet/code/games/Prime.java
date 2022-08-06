@@ -20,13 +20,12 @@ public class Prime {
     }
 
     private static boolean isPrime(int primeNumber) {
-        boolean flag = false;
-        for (int i = 2; i <= primeNumber / 2; ++i) {
-            if (primeNumber % 2 == 0) {
-                flag = true;
-                break;
+
+        for (int i = 2; i < primeNumber / 2; ++i) {
+            if (primeNumber % i == 0) {
+                return false;
             }
         }
-        return !flag;
+        return true;
     }
 }
