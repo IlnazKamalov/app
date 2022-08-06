@@ -21,6 +21,10 @@ public class Prime {
 
     private static boolean isPrime(int primeNumber) {
 
+        if (primeNumber ==1 || primeNumber == 0) {
+            return false;
+        }
+
         for (int i = 2; i < primeNumber / 2; ++i) {
             if (primeNumber % i == 0) {
                 return false;

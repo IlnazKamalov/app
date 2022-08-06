@@ -24,6 +24,7 @@ public class GCD {
         if (numberSecond == 0) {
             return numberFirst;
         }
+
         int result = numberFirst % numberSecond;
         return gcdByEuclidAlgorithm(numberSecond, result);
     }

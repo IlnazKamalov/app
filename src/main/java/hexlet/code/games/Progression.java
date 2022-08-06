@@ -32,6 +32,7 @@ public class Progression {
         Engine.runGame(RULES, questionAndAnswer);
     }
     private static int[] generateProgression(int begin, int sequence, int step) {
+
         int[] numbers = new int[sequence];
 
         for (int i = 0; i < numbers.length; i++) {
@@ -41,6 +42,7 @@ public class Progression {
         return numbers;
     }
     public static String question(int[] numbers, int numPosition) {
+
         StringBuilder stringBuilder = new StringBuilder();
 
         if (numPosition == 0) {
