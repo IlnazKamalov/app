@@ -15,17 +15,11 @@ public class EvenNumber {
         for (int i = 0; i < Engine.ROUNDS_COUNT; i++) {
             int number = Utils.getMaxRandom(Utils.MAX_RANDOM);
             questionAndAnswer[i][0] = Integer.toString(number);
-            questionAndAnswer[i][1] = evenNumber(number);
+            questionAndAnswer[i][1] = evenNumber(number) ? "yes" : "no";
         }
         Engine.runGame(RULES, questionAndAnswer);
     }
-    private static String evenNumber(int number) {
-        if (number == 1) {
-            return "no";
-        }
-        if (number % 2 == 0) {
-            return "yes";
-        }
-        return "no";
+    private static boolean evenNumber(int number) {
+        return number % 2 == 0;
     }
 }

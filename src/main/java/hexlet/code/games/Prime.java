@@ -20,7 +20,7 @@ public class Prime {
     }
 
     private static boolean isPrime(int primeNumber) {
-
+//check for SQRT
         if (primeNumber < 2) {
             return false;
         }
