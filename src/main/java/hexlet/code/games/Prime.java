@@ -20,18 +20,13 @@ public class Prime {
     }
 
     private static boolean isPrime(int primeNumber) {
-//check for SQRT
-        if (primeNumber > 2) {
-            return false;
-        }
-
-        int sqrt = (int) Math.sqrt(primeNumber);
-
-        for (int i = 2; i < sqrt; i++) {
-            if (primeNumber % i == 0) {
-                return false;
+        boolean flag = false;
+        for (int i = 2; i <= primeNumber / 2; ++i) {
+            if (primeNumber % 2 == 0) {
+                flag = true;
+                break;
             }
         }
-        return true;
+        return !flag;
     }
 }
