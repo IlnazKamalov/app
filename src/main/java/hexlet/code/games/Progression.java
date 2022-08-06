@@ -33,10 +33,10 @@ public class Progression {
     }
     private static int[] generateProgression(int begin, int sequence, int step) {
         int[] numbers = new int[sequence];
-        numbers[0] = begin;
 
-        for (int i = 1; i < numbers.length; i++) {
-            numbers[i] = numbers[i - 1] + step;
+        for (int i = 0; i < numbers.length; i++) {
+            var numProgression = begin + i * step;
+            numbers[i] = numProgression;
         }
         return numbers;
     }
