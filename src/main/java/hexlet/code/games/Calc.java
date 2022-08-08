@@ -22,21 +22,21 @@ public class Calc {
         Engine.runGame(RULES, questionAndAnswer);
     }
 
-    private static String calculate(String operator, int numberFirst, int numberSecond) {
+    private static int calculate(String operator, int numberFirst, int numberSecond) {
 
-        String result = "";
+        int result = 0;
 
         switch (operator) {
             case "+" -> {
-                result = Integer.toString(numberFirst + numberSecond);
+                result = numberFirst + numberSecond;
                 return result;
             }
             case "-" -> {
-                result = Integer.toString(numberFirst - numberSecond);
+                result = numberFirst - numberSecond;
                 return result;
             }
             case "*" -> {
-                result = Integer.toString(numberFirst * numberSecond);
+                result = numberFirst * numberSecond;
                 return result;
             }
             default -> System.out.println(" ");
