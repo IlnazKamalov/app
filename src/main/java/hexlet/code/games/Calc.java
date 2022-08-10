@@ -22,24 +22,29 @@ public class Calc {
         Engine.runGame(RULES, questionAndAnswer);
     }
 
-    private static int calculate(String operator, int numberFirst, int numberSecond) {
+    private static int calculate(String operator, int numberFirst, int numberSecond) throws RuntimeException {
 
         int result = 0;
 
-        switch (operator) {
-            case "+" -> {
-                result = numberFirst + numberSecond;
-                return result;
+        try {
+
+            switch (operator) {
+                case "+" -> {
+                    result = numberFirst + numberSecond;
+                    return result;
+                }
+                case "-" -> {
+                    result = numberFirst - numberSecond;
+                    return result;
+                }
+                case "*" -> {
+                    result = numberFirst * numberSecond;
+                    return result;
+                }
+                default -> System.out.println("No logic defined for operator! :-(");
             }
-            case "-" -> {
-                result = numberFirst - numberSecond;
-                return result;
-            }
-            case "*" -> {
-                result = numberFirst * numberSecond;
-                return result;
-            }
-            default -> System.out.println(" ");
+        } catch (RuntimeException e) {
+            System.out.println(e.getMessage());
         }
         return result;
     }
