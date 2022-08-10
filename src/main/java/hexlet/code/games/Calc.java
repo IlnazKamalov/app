@@ -24,7 +24,7 @@ public class Calc {
 
     private static int calculate(String operator, int numberFirst, int numberSecond) throws RuntimeException {
 
-        int result = 0;
+        int result;
 
         try {
 
@@ -41,13 +41,10 @@ public class Calc {
                     result = numberFirst * numberSecond;
                     return result;
                 }
-                default -> {
-
-                }
+                default -> throw new RuntimeException();
             }
         } catch (RuntimeException e) {
             throw new RuntimeException(e.getMessage());
         }
-        return result;
     }
 }
