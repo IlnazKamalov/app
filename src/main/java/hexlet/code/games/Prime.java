@@ -21,7 +21,7 @@ public class Prime {
 
     private static boolean isPrime(int primeNumber) {
 
-        if (primeNumber == 1 || primeNumber <= 0) {
+        if (primeNumber < 2) {
             return false;
         }
 
