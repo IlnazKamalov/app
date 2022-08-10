@@ -41,10 +41,9 @@ public class Calc {
                     result = numberFirst * numberSecond;
                     return result;
                 }
-                default -> System.out.println("No logic defined for operator! :-(");
             }
         } catch (RuntimeException e) {
-            System.out.println(e.getMessage());
+            System.out.println(e + "No logic defined for operator! :-(");
         }
         return result;
     }
