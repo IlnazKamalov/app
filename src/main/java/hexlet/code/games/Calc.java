@@ -38,7 +38,7 @@ public class Calc {
                 result = numberFirst * numberSecond;
                 return result;
             }
-            default -> throw new RuntimeException("No logic implemented for \"/\" operator! :(");
+            default -> throw new RuntimeException("No logic implemented for " + operator + " \"/\"");
         }
     }
 }
