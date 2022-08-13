@@ -2,7 +2,9 @@
 [![Actions Status](https://github.com/IlnazKamalov/java-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/IlnazKamalov/java-project-lvl1/actions)
 <a href="https://codeclimate.com/github/IlnazKamalov/app/maintainability"><img src="https://api.codeclimate.com/v1/badges/a0a8ae5cdfbb9acbcd8b/maintainability" /></a>
 
-Hi. This game is my first project! 
+Hi. 
+
+This game is my first project! 
 
 Welcome! 
 
