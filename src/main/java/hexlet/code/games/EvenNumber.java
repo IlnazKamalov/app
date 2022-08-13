@@ -10,7 +10,7 @@ public class EvenNumber {
     private static final String RULES = "Answer 'yes' if number even otherwise answer 'no'.";
     public static void runGame() {
 
-        String[][] questionAndAnswer = new String[Engine.ROUNDS_COUNT][Engine.ROUNDS_COUNT];
+        String[][] questionAndAnswer = new String[Engine.ROUNDS_COUNT][2];
 
         for (int i = 0; i < Engine.ROUNDS_COUNT; i++) {
             int number = Utils.getMaxRandom(Utils.MAX_RANDOM);
