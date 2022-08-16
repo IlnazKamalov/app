@@ -8,6 +8,7 @@ import hexlet.code.Utils;
 public class EvenNumber {
 
     private static final String RULES = "Answer 'yes' if number even otherwise answer 'no'.";
+
     public static void runGame() {
 
         String[][] questionAndAnswer = new String[Engine.ROUNDS_COUNT][2];
@@ -19,6 +20,7 @@ public class EvenNumber {
         }
         Engine.runGame(RULES, questionAndAnswer);
     }
+
     private static boolean evenNumber(int number) {
         return number % 2 == 0;
     }

@@ -6,6 +6,7 @@ import hexlet.code.Utils;
 
 
 public class Progression {
+
     public static final int PROGRESSION_MAX = 20;
 
     public static final int PROGRESSION_MIN = 5;
