@@ -19,6 +19,7 @@ public class GCD {
         }
         Engine.runGame(RULES, questionAndAnswer);
     }
+
     private static int gcdByEuclidAlgorithm(int numberFirst, int numberSecond) {
 
         if (numberSecond == 0) {
