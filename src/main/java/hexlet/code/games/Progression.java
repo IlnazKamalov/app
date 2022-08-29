@@ -13,7 +13,7 @@ public class Progression {
 
     public static final int BEGIN = 1;
 
-    public static final int STEP = 10;
+    public static final int STEP = 11;
 
     private static final String RULES = "What number is missing in the progression?";
 
